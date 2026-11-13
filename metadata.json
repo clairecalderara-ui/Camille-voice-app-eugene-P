@@ -1,0 +1,6 @@
+{
+  "name": "Eugène Perma Professionnel — Camille",
+  "description": "Assistant vocal et conseiller capillaire Eugène Perma Professionnel Paris : diagnostic, routines personnalisées et soins experts (FR / EN).",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

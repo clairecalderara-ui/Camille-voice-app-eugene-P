@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pale-oak: #CBC3B5;
+  --color-pale-oak-hover: #B8B0A2;
+  --color-atelier-dark: #0E0E0E;
+  --color-atelier-card: #151515;
+  --font-sans: "Montserrat", system-ui, -apple-system, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+}
+
+@layer base {
+  html {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: var(--font-sans);
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: #000000;
+    color: #ffffff;
+  }
+}
+
+/* Custom slim Parisian scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbc3b5;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b8b0a2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
